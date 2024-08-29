@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { mockDataContacts } from "../../data/mockData";
 import { tokens } from "../../theme";
-import Header from "../components/header";
+import Header from "../../components/header";
 import { useTheme } from "@mui/material";
 
 const Contacts = () => {
