@@ -185,7 +185,7 @@ const MySidebar = () => {
             />
             <Item
               title="Calendar"
-              to="/clendar"
+              to="/calendar"
               icon={<CalendarTodayOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
