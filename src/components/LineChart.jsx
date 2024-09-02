@@ -3,7 +3,7 @@ import { ResponsiveLine } from "@nivo/line";
 import { tokens } from "../theme";
 import { mockLineData as data } from "../data/mockData";
 
-const BarChart = ({ isDashboard = false }) => {
+const LineChart = ({ isDashboard = false }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -43,6 +43,7 @@ const BarChart = ({ isDashboard = false }) => {
           },
         },
       }}
+      colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }}
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
       xScale={{ type: "point" }}
       yScale={{
@@ -111,4 +112,4 @@ const BarChart = ({ isDashboard = false }) => {
   );
 };
 
-export default BarChart;
+export default LineChart;
