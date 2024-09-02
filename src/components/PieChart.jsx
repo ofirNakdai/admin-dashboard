@@ -45,9 +45,9 @@ const PieChart = ({ isDashboard = false }) => {
             outlineOpacity: 1,
           },
         },
-        toolTip: {
+        tooltip: {
           container: {
-            background: colors.primary[300],
+            color: colors.primary[500],
           },
         },
       }}
